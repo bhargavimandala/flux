@@ -2,6 +2,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: frontend-deployment-hpa
+  namespace: bas-ns
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
